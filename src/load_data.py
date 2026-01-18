@@ -3,15 +3,20 @@ import pandas as pd
 # Load dataset
 df = pd.read_csv("data/properties.csv")
 
-# Basic inspection
-print("Shape of dataset:", df.shape)
-print("\nColumn names:\n", df.columns.tolist())
+# print(df.info())
+# print(df.describe())
+print(df.head(10))
+# # Basic inspection
+# print("Shape of dataset:", df.shape)
+# print("\nColumn names:\n", df.columns.tolist())
 
-print("\nFirst 5 rows:")
-print(df.head())
+# print("\nFirst 5 rows:")
+# print(df.head())
 
-print("\nData info:")
-print(df.info())
+# print("\nData info:")
+# print(df.info())
 
 print("\nMissing values:")
-print(df.isnull().sum())
+# print(df.isnull().sum())
+
+# print((df.isnull().sum()/df.shape[0])*100)
