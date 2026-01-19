@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset
-df = pd.read_csv("data/properties.csv")
+df = pd.read_csv("data/messy_customer_sales_data.csv")
 
 # print(df.info())
 # print(df.describe())
@@ -11,11 +11,11 @@ df = pd.read_csv("data/properties.csv")
 
 # print(df.shape)
 
-print(df.columns)
+# print(df.columns)
 
-print(df.info())
+print(df.head())
 
-print(df[["sector", "society", "rate", "area"]])
+# print(df[["sector", "society", "rate", "area"]])
 # # Basic inspection
 # print("Shape of dataset:", df.shape)
 # print("\nColumn names:\n", df.columns.tolist())
@@ -25,6 +25,7 @@ print(df[["sector", "society", "rate", "area"]])
 
 # print("\nData info:")
 # print(df.info())
+print((df['Gender']=='M').sum())
 
 print("\nMissing values:")
 # print(df.isnull().sum())
