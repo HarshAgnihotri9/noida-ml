@@ -18,7 +18,7 @@ df['Gender'] = df['Gender'].replace({
     'male': 'Male',
     'f': 'Female',
     'female': 'Female' 
-# })
+})
 
 # gender_purchase = df.groupby("Gender")["Purchase_Amount"].sum()
 # gender_purchase2 = df.groupby("Gender")["Purchase_Amount"].value_counts()
