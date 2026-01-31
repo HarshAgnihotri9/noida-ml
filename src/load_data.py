@@ -20,6 +20,7 @@ df['Gender'] = df['Gender'].replace({
     'female': 'Female' 
 })
 
+
 # gender_purchase = df.groupby("Gender")["Purchase_Amount"].sum()
 # gender_purchase2 = df.groupby("Gender")["Purchase_Amount"].value_counts()
 
@@ -33,6 +34,7 @@ df['Gender'] = df['Gender'].replace({
 # print(df[df["City"] == "Delhi"])
 # print(df[df["City"].str.lower() == "delhi"])
 # print(df[df["City"].str.strip().str.lower() == "delhi"])
+
 
 # df[df["Customer_id"].between(1, 100)]
 print(df[pd.to_numeric(df["Customer_ID"], errors="coerce").between(1, 100)])
@@ -68,6 +70,6 @@ print(df[pd.to_numeric(df["Customer_ID"], errors="coerce").between(1, 100)])
 # print((df['Gender']=='M').sum())
 
 print("\nMissing values:")
-# print(df.isnull().sum())
+print(df.head())
 
 # print((df.isnull().sum()/df.shape[0])*100)
